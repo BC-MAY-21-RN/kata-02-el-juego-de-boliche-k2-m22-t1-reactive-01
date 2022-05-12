@@ -1,7 +1,6 @@
-const Frame = require('./frame');
+/* eslint-disable linebreak-style */
 const BowlingGame = require('./bowling_game');
 
-const frames = new Array(10).fill(new Frame(0));
-const juego = new BowlingGame(frames);
+const juego = new BowlingGame();
 juego.play();
 console.log(juego.showScores);
